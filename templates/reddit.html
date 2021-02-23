@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <form method="post">
+     {% csrf_token %}
+     <div style="align-content: center">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+     </div>
+
+     <label for="msg">Message:</label><br>
+     <input type="text" id="msg" name="message"><br>
+
+     <button type="submit" value="Submit" class="btn-dark"> Submit </button>
+
+</form>
+
+</body>
+</html>
